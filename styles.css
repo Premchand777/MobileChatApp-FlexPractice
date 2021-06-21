@@ -1,0 +1,392 @@
+html, body {
+  background: #f2f2f2;
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: hsl(271, 36%, 24%);
+}
+
+.info-section p {
+  color: hsl(270, 7%, 64%);
+}
+
+.avatar {
+  width: 25px;
+  height: 25px;
+  border: 2px solid #f2f2f2;
+  border-radius: 50%;
+}
+
+.dogs-div {
+  align-self: flex-end;
+  margin-right: 5px;
+  margin-top: 15px;
+}
+
+.dogs {
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+}
+
+.first-dog, .second-dog {
+  margin-right: 5px;
+}
+
+.first-container, .second-container {
+  display: flex;
+}
+
+.first-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  flex-direction: column;
+}
+
+.info-section p {
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+@media screen and (min-width: 750px) {
+  body {
+    overflow: hidden;
+  }
+
+  .first-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .second-container {
+    width: 65%;
+  }
+
+  .info-section {
+    flex: 1;
+  }
+
+  .mobile-section {
+    flex: 1;
+  }
+
+  .info-section {
+    margin: auto 100px auto 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .mobile {
+    margin: auto;
+  }
+
+  .top-div {
+    background: linear-gradient(to top, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    width: 45%;
+    height: 90%;
+    position: absolute;
+    z-index: 0;
+    top: -5px;
+    left: -230px;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 120%;
+  }
+
+  .bottom-div {
+    background: #fce6ff;
+    width: 45%;
+    height: 85%;
+    position: absolute;
+    z-index: 0;
+    bottom: -5px;
+    right: -170px;
+    border-top-left-radius: 175%;
+    border-top-right-radius: 120%;
+  }
+}
+
+.mobile {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background: #f2f0f5;
+  width: 250px;
+  height: 478px;
+  font-size: .6rem;
+  border: 10px solid #ffffff;
+  border-radius: 35px;
+  box-shadow: 5px 15px 18px 3px #d9d9d9;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  color: #f2f2f2;
+  height: 70px;
+  padding-top: 15px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  position: relative;
+}
+
+.user-section p {
+  color: hsl(276, 100%, 81%);
+}
+
+.lower-bucket-shape {
+  width: 100px;
+  height: 18px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 65px;
+}
+
+.three-dots {
+  margin-left: auto;
+}
+
+.left-chevron, .three-dots {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.name-section {
+  padding-left: 12px;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+.name-section>p {
+  margin-top: 2px;
+}
+
+.left-text-divs {
+  width: 125px;
+  font-size: .48rem;
+  background: #e8d7f4;
+  color: hsl(276, 55%, 52%);
+  margin-top: 5px;
+  margin-left: 5px;
+  padding: 0 5px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 2.3px;
+  border-bottom-right-radius: 12px;
+}
+
+.right-text-divs {
+  align-self: flex-end;
+  width: 130px;
+  font-size: .48rem;
+  background: #fff;
+  color: hsl(271, 15%, 43%);
+  margin-top: 5px;
+  margin-right: 5px;
+  padding: 0 5px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 2.3px;
+}
+
+.right-last-div {
+  width: 85px;
+  margin-bottom: 5px;
+}
+
+.last-two-divs {
+  width: 160px;
+  height: 35px;
+  color: #ebccff;
+  background: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+
+.money {
+  font-size: .8rem;
+  font-weight: bolder;
+  color: #f2f2f2;
+}
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 27px;
+  margin-top: 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  display: none;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  border: 2px solid #cc80ff;
+  background-color: hsl(293, 100%, 63%);
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a background color */
+.container:hover input~.checkmark {
+  background-color: #b400cc;
+  border: none;
+}
+
+/* When the radio button is checked, add background color */
+.container input:checked~.checkmark {
+  background-color: #b400cc;
+  border: none;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked~.checkmark::after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark::after {
+  top: 5px;
+  left: 5.5px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #fce6ff;
+}
+
+.type-field {
+  display: block;
+  margin: 15px 5px 5px;
+  position: relative;
+}
+
+.type-field input {
+  width: 100%;
+  height: 32px;
+  border: none;
+  border-radius: 15px;
+  padding: 0 13px;
+  color: hsl(271, 15%, 43%);
+  font-size: .65rem;
+}
+
+.input-chevron {
+  position: absolute;
+  right: 5px;
+  top: 3px;
+  color: #f2f2f2;
+  padding: 7.5px 7.5px 7.5px 9px;
+  width: 27px;
+  background: hsl(271, 36%, 24%);
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 510px) {
+  body {
+    overflow: hidden;
+  }
+
+  .first-container {
+    overflow: scroll;
+  }
+
+  .second-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .info-section {
+    margin-top: 45px;
+    padding-bottom: 60px;
+    text-align: center;
+    width: 65%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .top-div {
+    background: linear-gradient(to top, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    width: 75%;
+    height: 90%;
+    position: absolute;
+    z-index: 0;
+    top: -200px;
+    left: -170px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+
+  .bottom-div {
+    background: #fce6ff;
+    width: 75%;
+    height: 90%;
+    position: absolute;
+    z-index: 0;
+    bottom: -200px;
+    right: -170px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-top: 100px;
+  color: hsl(270, 7%, 64%);
+}
+
+.attribution a {
+  color: hsl(271, 36%, 24%);
+  text-decoration: none;
+  background: #ebccff;
+  border: 1px solid hsl(293, 100%, 63%);
+  border-radius: 25px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.attribution a:hover {
+  background: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  border: border: 1px solid #ebccff;
+  color: #ebccff;
+}
